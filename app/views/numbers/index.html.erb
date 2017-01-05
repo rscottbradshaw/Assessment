@@ -1,0 +1,20 @@
+<h1>Your Personal Line Chart</h1>
+
+<table>
+  <tr>
+    <th>All Numbers</th>
+  </tr>
+
+  <% @numbers.each do |number| %>
+    <tr>
+      <td><%= number.value %></td>
+      <td><%= link_to 'Show', number_path(number) %></td>
+      <td><%= link_to 'Edit', edit_number_path(number) %></td>
+      <td><%= link_to 'Destroy', number_path(number),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  <%= link_to 'Add new number', new_number_path %>
+
+</table>
