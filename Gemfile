@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+ruby '2.1.3'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -26,8 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # authentications
 gem 'devise'
 # These are for creating charts
+gem 'rails_12factor'
 gem 'chartkick', '~> 1.2.4'
-gem 'groupdate', '~> 2.1.1'
 gem 'active_median', '~> 0.1.0'
 
 
