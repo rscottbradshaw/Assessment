@@ -1,5 +1,16 @@
 <h1>Your Personal Line Chart</h1>
 
+<div class="row">
+  <!-- Line Chart - Single Series -->
+  <div class="col-xs-6">
+    <h3>Numbers Added</h3>
+    <%= line_chart Number.all, {height: "400px", library: {hAxis: {title: "All Entered Numbers"}, vAxis: {title: "Numbers", viewWindow: {min: 0, max:10}}}, discrete: true} %>
+    <!-- <%= line_chart @numbers.group(:value).group_by_week(:created_at).count %> -->
+    <!-- <%= line_chart @numbers.pluck(:value) %> -->
+    <!-- <%= line_chart @numbers.group_by_second(:created_at).count %> -->
+  </div>
+</div>
+
 <table>
   <tr>
     <th>All Numbers</th>

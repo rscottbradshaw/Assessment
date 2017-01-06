@@ -1,11 +1,11 @@
 class NumbersController < ApplicationController
   def index
-      @numbers = Number.all
-    end
+    @numbers = Number.all
+  end
 
   def show
-     @number = Number.find(params[:id])
-   end
+    @number = Number.find(params[:id])
+  end
 
   def new
     @number = Number.new
