@@ -1,4 +1,5 @@
 class NumbersController < ApplicationController
+  before_action :authenticate_user!
   def index
     @numbers = Number.all
   end
