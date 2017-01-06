@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-xs-6">
     <h3>Numbers Added</h3>
-    <%= line_chart Hash[(0...@numbers.size).zip @numbers.map(&:value)], {height: "400px", library: {hAxis: {title: "All Entered Numbers"}, vAxis: {title: "Numbers", viewWindow: {min: 0, max:10}}}, discrete: true} %>
+    <%= line_chart Hash[(0...@numbers.size).zip @numbers.map(&:value)], {width: "800px", height: "500px", library: {hAxis: {title: "All Entered Numbers"}, vAxis: {title: "Numbers", viewWindow: {min: 0, max:10}}}, curve: false, discrete: true} %>
   </div>
 </div>
 
